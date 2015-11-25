@@ -20,7 +20,7 @@ app.get('/:token/:room', function(req, res, next){
       color: (parseInt(req.query.alertType) === 1) ? 'red' : 'green'
     };
 
-    request.post({ url:"https://api.hipchat.com/v2/rooms/notification", qs:payload, json:true });
+    request.post({ url:"https://api.hipchat.com/v2/room/notification", qs:payload, json:true });
 
   }
 
